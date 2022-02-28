@@ -6,21 +6,27 @@
 }
 
 body {
+  overflow-y: hidden;
+
   background-color: var(--primary-color);
   font-size: 15px;
   font-family: Lato, sans-serif;
 }
+.body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 #container {
-  height: 525px;
-  width: 360px;
-  margin: 100px auto;
   background: #f7f7f7;
   box-shadow: 3px 3px 3px var(--tertiary-color);
   border-radius: 20px;
 }
 
 .title {
+  margin: 0;
   background: var(--tertiary-color);
   font-size: 20px;
   text-transform: uppercase;
@@ -66,6 +72,6 @@ body {
 
 #totalTip {
   font-size: 20px;
-  margin-top: 5px;
+  margin-bottom: 20px;
   text-align: center;
 }
